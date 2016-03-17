@@ -28,12 +28,9 @@ html, body {
 	color: WHITE;
 }
 
-.application {
-	margin: auto;
-}
-
 .row {
 	text-align: center;
+	margin: 0;
 }
 
 .header h1 span {
