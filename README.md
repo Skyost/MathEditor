@@ -4,7 +4,7 @@ MathEditor is a text editor that supports math input thanks to CKEditor and its 
 ## Features
 * Open and save your documents.
 * Math input (LaTex syntax).
-* Local, lightweight and responsive.
+* Local, static, lightweight and responsive.
 * WYSIWYG editor with CKEditor.
 
 ## Screenshots
