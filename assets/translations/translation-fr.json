@@ -1,0 +1,11 @@
+{
+	"button-new": "Nouveau",
+	"button-open": "Ouvrir",
+	"button-editor": "Éditeur",
+	"dialog-about-title": "À propos de MathEditor",
+	"dialog-about-message-1": "Un éditeur de texte qui supporte les entrées mathématiques grâce à CKEditor et ses plugins.",
+	"dialog-about-message-2": "Logiciels utilisés :",
+	"dialog-about-message-3": "Créé avec /heart/ par /skyost/.",
+	"dialog-about-message-4" : "Disponible sous licence /gnugpl/.",
+	"alert-changes": "Vos changements n'ont pas été sauvegardés !\nÊtes-vous sur de vouloir quitter cette page ?"
+}
