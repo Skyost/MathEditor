@@ -88,9 +88,18 @@ function openCredits() {
 			'<li><a href="https://github.com/eligrey/Blob.js/">Blob.js</a></li>' +
 			'<li><a href="https://github.com/coderifous/jquery-localize">jquery.localize.js</a></li>' +
 			'</ul>' +
-			'<strong>' + texts['dialog-about-message-3'].replace('/heart/', '<span class="glyphicon glyphicon-heart" style="color: #EA6153;"></span>').replace('/skyost/', '<a href="https://www.skyost.eu">Skyost</a>') + ' ' +
+			'<strong>' + texts['dialog-about-message-3'].replace('/heart/', '<span id="heartbeat" class="glyphicon glyphicon-heart"></span>').replace('/skyost/', '<a href="https://www.skyost.eu">Skyost</a>') + ' ' +
 			texts['dialog-about-message-4'].replace('/gnugpl/', '<a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU GPL v3</a>') + '</strong>',
-		buttons: [{
+		buttons: [
+		{
+			icon: 'glyphicon glyphicon-console',
+			cssClass: 'btn-default',
+			label: 'Github',
+			action: function(dialog){
+				window.open('https://github.com/Skyost/MathEditor', '_self');
+			}
+		},
+		{
 			icon: 'glyphicon glyphicon-heart',
 			cssClass: 'btn-info',
 			label: 'OK',

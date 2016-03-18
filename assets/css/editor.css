@@ -1,6 +1,27 @@
 @font-face {
-    font-family: 'Title';
-    src: url('../fonts/ar-berkley.ttf');
+	font-family: 'Title';
+	src: url('../fonts/ar-berkley.ttf');
+}
+
+@keyframes heartbeat {
+	0% {
+		transform: scale(1);
+	}
+	20% {
+		transform: scale(1.2);
+	}
+	40% {
+		transform: scale(1);
+	}
+	60% {
+		transform: scale(1.2);
+	}
+	80% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 html, body {
@@ -79,17 +100,17 @@ html, body {
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex; 
-  
-  /* Align the bootstrap's container vertically */
+	
+	/* Align the bootstrap's container vertically */
 	-webkit-box-align : center;
 	-webkit-align-items : center;
 	-moz-box-align : center;
 	-ms-flex-align : center;
 	align-items : center;
-  
+	
 	/* In legacy web browsers such as Firefox 9 we need to specify the width of the flex container */
 	width: 100%;
-  
+	
 	/* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers hence the bootstrap's container won't be aligned to the center anymore.
 	Therefore, we should use the following declarations to get it centered again */
 	-webkit-box-pack : center;
@@ -97,6 +118,11 @@ html, body {
 	-ms-flex-pack : center;
 	-webkit-justify-content : center;
 	justify-content : center;
+}
+
+#heartbeat {
+	color: #EA6153;
+	animation: heartbeat 1s infinite;
 }
 
 .editor {
