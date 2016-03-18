@@ -90,6 +90,10 @@ html, body {
 	width: 130px;
 }
 
+#button-new, #button-open {
+	margin-top: 0.4em;
+}
+
 .vertical-center {
 	min-height: 100%;
 	min-height: 100vh;
