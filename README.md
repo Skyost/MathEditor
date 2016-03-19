@@ -12,7 +12,7 @@ MathEditor is a text editor that supports math input thanks to CKEditor and its 
 ![Screenshot 2](https://github.com/Skyost/MathEditor/blob/gh-pages/assets/readme/screenshot-2.png)
 
 ## Demo
-A demo is hosted [here](http://skyost.github.io/MathEditor/), thanks to Github Pages !
+A demo is hosted [here](https://skyost.github.io/MathEditor/editor.html), thanks to Github Pages !
 
 ## Downloads
 You can download the editor [here](https://github.com/Skyost/MathEditor/archive/gh-pages.zip). You have to run it through a web server (open/save features will not be available otherwise).
