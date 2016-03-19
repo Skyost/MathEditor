@@ -57,7 +57,7 @@ function saveDocument(editor) {
 	var bb = new Blob([data], {type: MIME_TYPE});
 	var a = document.createElement('a');
 	a.class = 'blob-download';
-	a.download = 'document.me';
+	a.download = 'document.html';
 	a.href = window.URL.createObjectURL(bb);
 	a.dataset.downloadurl = [MIME_TYPE, a.download, a.href].join(':');
 	a.draggable = true; // Don't really need, but good practice.
