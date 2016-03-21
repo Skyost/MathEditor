@@ -81,12 +81,13 @@ function openCredits() {
 		message:
 			'<strong>' + texts['dialog-about-message-1'] + '</strong><br/>' +
 			texts['dialog-about-message-2'] + '<br/><ul style="margin-top: 0.4em; padding-left: 1.4em;">' +
-			'<li><a href="http://jquery.com/">jQuery</a></li>' +
-			'<li><a href="http://getbootstrap.com/">Bootstrap</a></li>' +
-			'<li><a href="https://github.com/nakupanda/bootstrap3-dialog">BootstrapDialog</a></li>' +
-			'<li><a href="http://ckeditor.com/">CKEditor</a></li>' +
-			'<li><a href="https://github.com/eligrey/Blob.js/">Blob.js</a></li>' +
-			'<li><a href="https://github.com/coderifous/jquery-localize">jquery.localize.js</a></li>' +
+			'<li><a href="http://jquery.com/">jQuery v2.2.2</a></li>' +
+			'<li><a href="http://getbootstrap.com/">Bootstrap v3.3.6</a></li>' +
+			'<li><a href="https://github.com/nakupanda/bootstrap3-dialog">BootstrapDialog v1.35.0</a></li>' +
+			'<li><a href="http://ckeditor.com/">CKEditor v4.5.7</a></li>' +
+			'<li><a href="https://github.com/eligrey/Blob.js/">Blob.js 20140724</a></li>' +
+			'<li><a href="https://github.com/coderifous/jquery-localize">jquery.localize.js v0.1.0</a></li>' +
+			'<li><a href="https://www.mathjax.org/">MathJax v2.6.1</a></li>' +
 			'</ul>' +
 			'<strong>' + texts['dialog-about-message-3'].replace('/heart/', '<span id="heartbeat" class="glyphicon glyphicon-heart"></span>').replace('/skyost/', '<a href="https://www.skyost.eu">Skyost</a>') + ' ' +
 			texts['dialog-about-message-4'].replace('/gnugpl/', '<a href="http://www.gnu.org/licenses/gpl-3.0.html">GNU GPL v3</a>') + '</strong>',
@@ -132,7 +133,8 @@ $(document).ready(function() {
 	});
 	editor = CKEDITOR.replace($('textarea').get(0), {
 		removeButtons: 'Maximize',
-		extraPlugins: 'customclose,customsave'
+		extraPlugins: 'customclose,customsave,font,mathjax',
+		mathJaxLib: './assets/js/mathjax-2.6.1/MathJax.js?config=TeX-AMS_HTML'
 	});
 	CKEDITOR.on('instanceReady', function(event) {
 		$('#button-new').click(openEditor);
