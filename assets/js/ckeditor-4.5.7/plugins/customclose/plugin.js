@@ -1,5 +1,5 @@
 /*
-* Custom plugin for mathseditor.
+* Custom plugin for MathEditor.
 */
 
 CKEDITOR.plugins.add('customclose', {

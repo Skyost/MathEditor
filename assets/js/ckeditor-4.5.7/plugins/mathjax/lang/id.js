@@ -6,7 +6,7 @@ CKEDITOR.plugins.setLang( 'mathjax', 'id', {
 	title: 'Mathematics in TeX', // MISSING
 	button: 'Matematika',
 	dialogInput: 'Tulis Tex anda disini',
-	docUrl: 'http:// MISSING //en.wikibooks.org/wiki/LaTeX/Mathematics',
+	docUrl: 'latex.html',
 	docLabel: 'TeX documentation', // MISSING
 	loading: 'memuat...',
 	pathName: 'math' // MISSING

@@ -7,6 +7,7 @@ var texts = {
 	'dialog-about-message-2': 'Softwares used :',
 	'dialog-about-message-3': 'Created with /heart/ by /skyost/.',
 	'dialog-about-message-4' : 'Licensed under /gnugpl/.',
+	'dialog-button-issue': 'Bug, issue or idea ?',
 	'alert-changes': 'Your changes are not saved !\nAre you sure you want to leave ?'
 }
 
@@ -98,6 +99,14 @@ function openCredits() {
 			label: 'Github',
 			action: function(dialog){
 				window.open('https://github.com/Skyost/MathEditor', '_self');
+			}
+		},
+		{
+			icon: 'glyphicon glyphicon-user',
+			cssClass: 'btn-default',
+			label: texts['dialog-button-issue'],
+			action: function(dialog){
+				window.open('https://github.com/Skyost/MathEditor/issues', '_self');
 			}
 		},
 		{

@@ -6,7 +6,7 @@ CKEDITOR.plugins.setLang( 'mathjax', 'sq', {
 	title: 'Matematikë në TeX',
 	button: 'Matematikë',
 	dialogInput: 'Shkruani TeX-in tuaj këtu',
-	docUrl: 'http://en.wikibooks.org/wiki/LaTeX/Mathematics',
+	docUrl: 'latex.html',
 	docLabel: 'Tex dokumentimi',
 	loading: 'duke u hapur...',
 	pathName: 'matematikë'

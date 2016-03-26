@@ -6,7 +6,7 @@ CKEDITOR.plugins.setLang( 'mathjax', 'es', {
 	title: 'Matemáticas en TeX',
 	button: 'Matemáticas',
 	dialogInput: 'Escribe tu TeX aquí',
-	docUrl: 'http://es.wikipedia.org/wiki/TeX',
+	docUrl: 'latex.html',
 	docLabel: 'Documentación de TeX',
 	loading: 'cargando...',
 	pathName: 'matemáticas'
