@@ -140,6 +140,7 @@ $(document).ready(function() {
 			texts = data;
 		}
 	});
+	CKEDITOR.timestamp = null;
 	editor = CKEDITOR.replace($('textarea').get(0), {
 		removeButtons: 'Maximize',
 		extraPlugins: 'customclose,customsave,font,mathjax',
