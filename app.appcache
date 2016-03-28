@@ -1,0 +1,24 @@
+CACHE MANIFEST
+# Mon, 28 Mar 2016 13:44:13 GMT
+# From http://www.epochconverter.com/
+
+CACHE:
+editor.html
+latex.html
+assets/css/bootstrap-3.3.6.min.css
+assets/css/bootstrap-dialog-1.35.0.min.css
+assets/css/editor.css
+assets/fonts/ar-berkley.ttf
+assets/fonts/glyphicons-halflings-regular.ttf
+assets/img/icon.png
+assets/js/jquery-2.2.2.min.js
+assets/js/bootstrap-3.3.6.min.js
+assets/js/bootstrap-dialog-1.35.0.min.js
+assets/js/blob-20140724.js
+assets/js/jquery.localize-0.1.0.min.js
+assets/js/editor.js
+assets/js/ckeditor-4.5.7/ckeditor.js
+assets/translations/translation-fr.json
+
+NETWORK:
+*
