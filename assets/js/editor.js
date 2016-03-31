@@ -6,8 +6,11 @@ var texts = {
 	'dialog-about-message-1': 'A text editor that supports math input thanks to CKEditor and its plugins.',
 	'dialog-about-message-2': 'Softwares used :',
 	'dialog-about-message-3': 'Created with /heart/ by /skyost/.',
-	'dialog-about-message-4' : 'Licensed under /gnugpl/.',
-	'dialog-button-issue': 'Bug, issue or idea ?',
+	'dialog-about-message-4': 'Licensed under /gnugpl/.',
+	'dialog-about-button-issue': 'Bug, issue or idea ?',
+	'dialog-update-title': 'Update available !',
+	'dialog-update-message': 'An update of this software is available ! It will be available in your browser when you will refresh this page.',
+	'dialog-update-button-refresh': 'Refresh this page',
 	'alert-changes': 'Your changes are not saved !\nAre you sure you want to leave ?'
 }
 
@@ -97,15 +100,15 @@ function openCredits() {
 			icon: 'glyphicon glyphicon-console',
 			cssClass: 'btn-default',
 			label: 'Github',
-			action: function(dialog){
+			action: function(dialog) {
 				window.open('https://github.com/Skyost/MathEditor', '_self');
 			}
 		},
 		{
 			icon: 'glyphicon glyphicon-user',
 			cssClass: 'btn-default',
-			label: texts['dialog-button-issue'],
-			action: function(dialog){
+			label: texts['dialog-about-button-issue'],
+			action: function(dialog) {
 				window.open('https://github.com/Skyost/MathEditor/issues', '_self');
 			}
 		},
@@ -113,7 +116,7 @@ function openCredits() {
 			icon: 'glyphicon glyphicon-heart',
 			cssClass: 'btn-info',
 			label: 'OK',
-			action: function(dialog){
+			action: function(dialog) {
 				dialog.close();
 			}
 		}]
@@ -140,6 +143,32 @@ $(document).ready(function() {
 			texts = data;
 		}
 	});
+	var webappCache = window.applicationCache;
+	webappCache.addEventListener('updateready', function() {
+		BootstrapDialog.show({
+			type: BootstrapDialog.TYPE_INFO,
+			title: texts['dialog-update-title'],
+			message: texts['dialog-update-message'],
+			buttons: [
+			{
+				icon: 'glyphicon glyphicon-refresh',
+				cssClass: 'btn-default',
+				label: texts['dialog-update-button-refresh'],
+				action: function(dialog) {
+					window.location.reload();
+				}
+			},
+			{
+				icon: 'glyphicon glyphicon-ok',
+				cssClass: 'btn-info',
+				label: 'OK',
+				action: function(dialog) {
+					dialog.close();
+				}
+			}]
+		});
+	}, false);
+	webappCache.update();
 	CKEDITOR.timestamp = null;
 	editor = CKEDITOR.replace($('textarea').get(0), {
 		removeButtons: 'Maximize',
