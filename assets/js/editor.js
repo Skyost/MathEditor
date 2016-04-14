@@ -132,6 +132,39 @@ function closeEditor(editor) {
 	}
 }
 
+function showUpdateDialogIfNeeded() {
+	try {
+		window.applicationCache.addEventListener('updateready', function() {
+			BootstrapDialog.show({
+				type: BootstrapDialog.TYPE_INFO,
+				title: texts['dialog-update-title'],
+				message: texts['dialog-update-message'],
+				buttons: [
+				{
+					icon: 'glyphicon glyphicon-refresh',
+					cssClass: 'btn-default',
+					label: texts['dialog-update-button-refresh'],
+					action: function(dialog) {
+						window.location.reload();
+					}
+				},
+				{
+					icon: 'glyphicon glyphicon-ok',
+					cssClass: 'btn-info',
+					label: 'OK',
+					action: function(dialog) {
+						dialog.close();
+					}
+				}]
+			});
+		}, false);
+		window.applicationCache.update();
+	}
+	catch(ex) {
+		console.error(ex);
+	}
+}
+
 $(document).ready(function() {
 	$('[data-localize]').localize('translation', {
 		pathPrefix: './assets/translations',
@@ -143,34 +176,9 @@ $(document).ready(function() {
 			texts = data;
 		}
 	});
-	var webappCache = window.applicationCache;
-	webappCache.addEventListener('updateready', function() {
-		BootstrapDialog.show({
-			type: BootstrapDialog.TYPE_INFO,
-			title: texts['dialog-update-title'],
-			message: texts['dialog-update-message'],
-			buttons: [
-			{
-				icon: 'glyphicon glyphicon-refresh',
-				cssClass: 'btn-default',
-				label: texts['dialog-update-button-refresh'],
-				action: function(dialog) {
-					window.location.reload();
-				}
-			},
-			{
-				icon: 'glyphicon glyphicon-ok',
-				cssClass: 'btn-info',
-				label: 'OK',
-				action: function(dialog) {
-					dialog.close();
-				}
-			}]
-		});
-	}, false);
-	webappCache.update();
+	showUpdateDialogIfNeeded();
 	CKEDITOR.timestamp = null;
-	editor = CKEDITOR.replace($('textarea').get(0), {
+	editor = CKEDITOR.replace($('#matheditor').get(0), {
 		removeButtons: 'Maximize',
 		extraPlugins: 'customclose,customsave,print,justify,font,mathjax',
 		mathJaxLib: './assets/js/mathjax-2.6.1/MathJax.js?config=TeX-AMS_HTML'
