@@ -172,7 +172,7 @@ $(document).ready(function() {
 	CKEDITOR.timestamp = null;
 	editor = CKEDITOR.replace($('textarea').get(0), {
 		removeButtons: 'Maximize',
-		extraPlugins: 'customclose,customsave,font,mathjax',
+		extraPlugins: 'customclose,customsave,print,justify,font,mathjax',
 		mathJaxLib: './assets/js/mathjax-2.6.1/MathJax.js?config=TeX-AMS_HTML'
 	});
 	CKEDITOR.on('instanceReady', function(event) {

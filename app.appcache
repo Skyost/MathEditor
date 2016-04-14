@@ -1,5 +1,5 @@
 CACHE MANIFEST
-# Sat, 02 Apr 2016 10:51:09 GMT
+# Thu, 14 Apr 2016 09:10:00 GMT
 # From http://www.epochconverter.com/
 
 CACHE:
@@ -43,6 +43,17 @@ assets/js/ckeditor-4.5.7/plugins/font/lang/fr.js
 assets/js/ckeditor-4.5.7/plugins/font/plugin.js
 assets/js/ckeditor-4.5.7/plugins/image/dialogs/image.js
 assets/js/ckeditor-4.5.7/plugins/image/images/noimage.png
+assets/js/ckeditor-4.5.7/plugins/justify/icons/justifyblock.png
+assets/js/ckeditor-4.5.7/plugins/justify/icons/justifyleft.png
+assets/js/ckeditor-4.5.7/plugins/justify/icons/justifycenter.png
+assets/js/ckeditor-4.5.7/plugins/justify/icons/justifyright.png
+assets/js/ckeditor-4.5.7/plugins/justify/icons/hidpi/justifyblock.png
+assets/js/ckeditor-4.5.7/plugins/justify/icons/hidpi/justifyleft.png
+assets/js/ckeditor-4.5.7/plugins/justify/icons/hidpi/justifycenter.png
+assets/js/ckeditor-4.5.7/plugins/justify/icons/hidpi/justifyright.png
+assets/js/ckeditor-4.5.7/plugins/justify/lang/en.js
+assets/js/ckeditor-4.5.7/plugins/justify/lang/fr.js
+assets/js/ckeditor-4.5.7/plugins/justify/plugin.js
 assets/js/ckeditor-4.5.7/plugins/lineutils/plugin.js
 assets/js/ckeditor-4.5.7/plugins/link/dialogs/anchor.js
 assets/js/ckeditor-4.5.7/plugins/link/dialogs/link.js
@@ -60,6 +71,11 @@ assets/js/ckeditor-4.5.7/plugins/mathjax/lang/en.js
 assets/js/ckeditor-4.5.7/plugins/mathjax/lang/fr.js
 assets/js/ckeditor-4.5.7/plugins/mathjax/plugin.js
 assets/js/ckeditor-4.5.7/plugins/pastefromword/filter/default.js
+assets/js/ckeditor-4.5.7/plugins/print/icons/print.png
+assets/js/ckeditor-4.5.7/plugins/print/icons/hidpi/print.png
+assets/js/ckeditor-4.5.7/plugins/print/lang/en.js
+assets/js/ckeditor-4.5.7/plugins/print/lang/fr.js
+assets/js/ckeditor-4.5.7/plugins/print/plugin.js
 assets/js/ckeditor-4.5.7/plugins/scayt/dialogs/options.js
 assets/js/ckeditor-4.5.7/plugins/scayt/dialogs/toolbar.css
 assets/js/ckeditor-4.5.7/plugins/specialchar/dialogs/lang/en.js
